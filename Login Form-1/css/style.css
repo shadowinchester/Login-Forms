@@ -1,6 +1,7 @@
 body {
   background: linear-gradient(45deg, #fc466b, #3f5efb);
 }
+
 .main-form {
   display: flex;
   flex-direction: column;
