@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  padding: 3em;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(8px);
+  /* Use of -webkit-backdrop-filter : The backdrop-filter CSS property lets you apply graphical effects such as blurring or color shifting to the area behind an element. Because it applies to everything behind the element, to see the effect you must make the element or its background at least partially transparent. */
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  margin: 20px 0px 0px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 100ms;
+}
+
+input::placeholder {
+  color: black;
+  padding-left: 10px;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  -webkit-backdrop-filter: blur(1 px);
+}
+
+button {
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  margin-top: 30px;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  -webkit-backdrop-filter: blur(4 px);
+  color: white;
+  transition: all 100 ms;
+}
+
+button:active {
+  transform: translateY(1.5px);
+}
